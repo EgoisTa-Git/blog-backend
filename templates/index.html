@@ -33,7 +33,7 @@
                      {% else %}
                       src="{% static 'img/banner/blog.png' %}"
                      {% endif %}
-                     alt="">
+                     alt="post image">
               </div>
               <div class="blog__slide__content">
                 <h3><a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a></h3>
@@ -61,7 +61,7 @@
                        {% else %}
                          src="{% static 'img/banner/blog.png' %}"
                        {% endif %}
-                       alt="">
+                       alt=""post image>
                   <ul class="thumb-info" style="max-width: 550px">
                     <li><a href="#"><i class="ti-user"></i>{{ post.author }}</a></li>
                     <li><a href="#"><i class="ti-notepad"></i>{{ post.published_at }}</a></li>
